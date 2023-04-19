@@ -1,0 +1,1337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-primary: #fd5f00;
+}
+
+/* header */
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 102px;
+}
+
+.header-top .email,
+.header-top .phone {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-top p i {
+    color: var(--color-primary);
+}
+
+.apply button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 110px;
+    height: 46px;
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.main-nav {
+    background-color: #0d1128 !important;
+    height: 72px;
+}
+
+.nav-group-left{
+    gap: 40px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+/* sub nav */
+.nav-item {
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+.nav-item:hover .sub-nav {
+    opacity: 1;
+    z-index: 999;
+    height: auto;
+    top: 100%;
+}
+
+.nav-item .sub-nav {
+    position: absolute;
+    border-radius: 2px;
+    top: 100px;
+    left: 0;
+    width: 120px;
+    text-align: center;
+    color: #ffffff;
+    list-style: none;
+    background-color: #f47474;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s linear;
+    /* display: none; */
+}
+
+.nav-item .sub-nav > li {
+    transition: 0.2s linear;
+}
+
+.nav-item .sub-nav > li:hover {
+    background-color: #ebcdcd;
+}
+
+.nav-item .sub-nav > li >a {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.nav-group-left .active a {
+    color: #fd5f15 !important;
+}
+
+.nav-group-left > li a {
+    color: #ffffff !important;
+}
+
+.nav-group-left > li a:hover {
+    color: #fd5f15 !important;
+}
+
+.form-search {
+    width: 278px;
+    border: 1px solid #26293e;
+    border-radius: 50px;
+    position: relative;
+}
+
+.form-search > input {
+    padding: 10px 10px;
+    padding-left: 16px;
+    padding-right: 40px;
+    border: none;
+    outline: none;
+    color: #ffffff !important;
+    background-color: transparent;
+    width: 100%;
+}
+
+.form-search > button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #8baebf;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 16px;
+}
+
+/* header-banner */
+
+.header .banner {
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .control-caro {
+    bottom: 374px;
+}
+
+.control-caro li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.control-caro .active {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.banner .banner-coures {
+    height: 310px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-coures .coures-item {
+    padding: 0 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1128;
+    color: #ffffff;
+}
+
+.coures-item .desc {
+    text-align: center;
+    color: #ffdfcc;
+}
+
+.carousel-inner .caption {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caption .caption-inner {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.caption .caption-inner h1 {
+    font-size: 60px;
+}
+
+.caption .caption-inner p {
+    color: #dfdcdb;
+    margin-top: 44px;
+}
+
+.caption .caption-inner button {
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 60px;
+    background-color: var(--color-primary);
+    color: #ffeee4;
+    border-radius: 50px;
+}
+
+/* main */
+
+.offer {
+    display: flex;
+}
+
+.main-offer {
+    padding-right: 48px;
+}
+
+.main-offer h3 {
+    margin-bottom: 44px;
+    margin-top: 60px;
+}
+
+.main-offer .description {
+    font-size: 18px;
+    color: #6f6f6f;
+    /* margin-bottom: 64px; */
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 60px;
+}
+.offer-item h5 {
+    color: #6c6c6c;
+}
+
+.offer-item p {
+    color: #898989;
+}
+
+.offer-item img {
+    width: 80px;
+    height: 80px;
+}
+
+/* statistical */
+
+.statistical {
+    height: auto;
+    position: relative;
+}
+.statistical > img {
+    opacity: 0.5;
+}
+
+.statistical .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.statistical .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 76px;
+}
+
+.statistical-inner {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 64px;
+}
+
+.statistical-inner-text {
+    flex: 1;
+}
+
+.statistical-inner-text h1 {
+    color: #ffffff;
+}
+
+.statistical-inner-text p {
+    color: #e8dad2;
+}
+
+.statistical-inner-video {
+    flex: 1;
+}
+
+.statistical-inner-video video {
+    width: 100%;
+}
+
+.statistical-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistical-bottom-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistical-bottom-item h1 {
+    color: #ffffff;
+}
+
+.statistical-bottom-item p {
+    color: #d3c2bb;
+}
+
+/* our courses */
+
+.page-title {
+    padding-top: 128px !important;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.our-courses-inner {
+    width: 100%;
+    padding: 0 24px;
+    /* margin-bottom: 128px; */
+}
+
+.card-courses .card {
+    border: none !important;
+}
+
+.card-courses .card .card-body {
+    padding: 20px 0;
+}
+
+.card-body .teacher {
+    display: flex;
+}
+
+.card-body .teacher .teacher-item {
+    flex: 1;
+    font-size: 13px;
+}
+
+.card-body .teacher .teacher-item i {
+    color: var(--color-primary);
+    margin-right: 10px;
+}
+
+.card-body .teacher .teacher-item span {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #787878;
+}
+
+.card-courses .card .card-body > h4 {
+    margin-top: 20px;
+}
+
+.card-courses .card .card-body > p {
+    color: #787878;
+}
+
+.card-courses .card .card-body > button {
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 38px;
+    border-radius: 50px;
+    line-height: 38px;
+    color: #ffffff;
+}
+
+/* Certtified-Teachers */
+
+.Certtified-Teachers {
+    margin-top: 128px;
+    padding-bottom: 128px;
+    background-color: #fafafa;
+}
+
+.Certtified-Teachers-inner {
+    padding: 0 24px;
+}
+
+.Certtified-Teachers-inner .row {
+    align-items: end;
+}
+
+.Certtified-Teachers-inner .tearch-card .card {
+    border: none;
+}
+
+.tearch-card .card .card-body .card-title {
+    margin-bottom: 0;
+}
+
+.tearch-card .card .card-body .card-position {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 13px;
+    /* margin-top: 10px; */
+}
+
+.tearch-card .card .card-body .card-text {
+    color: #666666;
+}
+
+/* background-teacher */
+
+.background-teacher {
+    position: relative;
+}
+
+.background-teacher img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.background-teacher .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* skill-teacher */
+
+.skill-teacher {
+    background-color: #fafafa;
+    padding-bottom: 140px;
+}
+
+.skill-teacher .skill-teacher-card .card {
+    border: none !important;
+}
+
+.skill-teacher-card .card .card-img-top{
+    position: relative;
+}
+
+.skill-teacher-card .card .card-img-top>img{
+    width: 100%;
+}
+
+.skill-teacher-card .card .card-img-top .time-event{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 46px;
+    height: 100px;
+    background-color: #5d50c6;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.card-img-top .time-event p{
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.skill-teacher-card .card .card-body .card-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-body .card-control button {
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    color: white;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 40px;
+}
+
+.card .card-body .card-control .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.card .card-body .card-control .message > span {
+    color: var(--color-primary);
+    margin-right: 5px;
+}
+
+.card .card-body .card-control .message .message-icon {
+    color: #b3b3b3;
+}
+
+/* student-say */
+
+.student-say .page-title {
+    width: 666px !important;
+}
+
+.student-say .page-title > h1 {
+    margin-bottom: 46px;
+}
+
+.student-say-inner {
+    width: 510px;
+    margin: 0 auto;
+    margin-bottom: 118px;
+}
+
+.student-say-inner .item-student-say {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 84px;
+}
+
+.item-student-say img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.student-say-inner .control-caro li {
+    background-color: #cccccc !important;
+}
+
+.student-say-inner .control-caro .active {
+    background-color: var(--color-primary) !important;
+}
+
+.student-say-content .name {
+    color: var(--color-primary);
+}
+
+.student-say-footer {
+    width: 100%;
+    display: flex;
+}
+
+.student-say-footer img {
+    width: 25%;
+}
+
+/* footer */
+
+.footer {
+    padding: 90px 0;
+    background-color: #232323;
+}
+
+.footer-content .categories {
+    width: 100%;
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.footer-content .categories > li {
+    flex: 1;
+}
+
+.footer-content .categories > li h4 {
+    margin-bottom: 50px;
+}
+
+.categories .contact {
+    list-style: none;
+}
+
+.categories .contact > li {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.categories .contact > li .address {
+    color: #bdb495;
+}
+
+.recent-blog > li {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.recent-blog > li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.recent-blog > li h6 {
+    margin-bottom: 20px;
+}
+
+.recent-blog > li p {
+    font-size: 13px;
+    color: #808080;
+}
+
+.footer-link {
+    list-style: none;
+}
+
+.footer-link > li a {
+    color: #bdbdbd;
+}
+
+.footer-link > li a i {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.form-subcribe > input {
+    border: none;
+    outline: none;
+    background-color: #393939;
+    width: 100%;
+    height: 58px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.form-subcribe > button {
+    border: none;
+    outline: none;
+    background-color: #5d50c6;
+    width: 100%;
+    height: 58px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.connect-social .social-icons {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    margin: 0 auto;
+}
+
+.connect-social .social-icons a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #2e2e2e;
+    text-align: center;
+    line-height: 44px;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #bdb495;
+    margin-top: 110px;
+}
+
+/* reponsive */
+
+@media screen and (max-width: 576px) {
+    /* header */
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .header-top .brand {
+        margin: 20px 0;
+    }
+
+    .header-top .apply {
+        width: 100%;
+        text-align: end;
+    }
+
+    .header-top .apply > button {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    /* nav */
+
+    .main-nav {
+        height: auto;
+        margin: 0 -15px !important;
+    }
+
+    .nav-item {
+        flex: 1;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-item .sub-nav {
+        height: 0 !important;
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.2s linear;
+    }
+
+    .nav-item .sub-nav li {
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    #showAbout:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+
+    #showCourses:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+    #showStaff:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+    #showBlog:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-collapse .nav-group-left {
+        order: 2;
+        flex-direction: column;
+        height: 0;
+        padding-left: 10px;
+        width: 100%;
+        transition: all 0.2s linear;
+    }
+
+    .form-search {
+        order: 1;
+        flex: 1;
+    }
+
+    .nav-mobile {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+        text-align: start;
+        color: #ffffff;
+    }
+
+    #toggle:checked ~ .nav-group-left {
+        height: 290px !important;
+        overflow-y: auto;
+    }
+
+    /* banner */
+
+    .banner .banner-coures {
+        position: unset;
+        height: auto;
+    }
+
+    .banner-coures .coures-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner .control-caro {
+        display: none;
+    }
+
+    .caption .caption-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .caption .caption-inner h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .caption .caption-inner p {
+        margin-top: 20px;
+    }
+
+    .caption .caption-inner button {
+        width: 100px;
+        height: 30px;
+    }
+
+    /* offer */
+
+    .offer {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 114px;
+    }
+
+    .offer .img-offer {
+        display: none;
+    }
+
+    /* statistical */
+
+    .statistical {
+        background-image: url('../img/skill-teacher/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 114px;
+    }
+
+    .statistical > img {
+        display: none;
+    }
+
+    .statistical .container {
+        position: unset;
+        transform: translateX(0);
+    }
+
+    .statistical-inner {
+        flex-direction: column;
+    }
+
+    .statistical-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* student-say-inner */
+
+    .student-say .page-title {
+        width: 100% !important;
+    }
+
+    .student-say-inner {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-bottom: 118px;
+    }
+
+    .student-say-footer {
+        flex-direction: column;
+    }
+
+    .student-say-footer img {
+        width: 100% !important;
+    }
+
+    /* footer */
+
+    .footer-content .categories {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* header */
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .header-top .brand {
+        margin: 20px 0;
+    }
+
+    .header-top .apply {
+        width: 100%;
+        text-align: end;
+    }
+
+    .header-top .apply > button {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    /* nav */
+
+    .main-nav {
+        height: auto;
+        margin: 0 -15px !important;
+    }
+    
+    .nav-item {
+        flex: 1;
+    }
+
+    .nav-item .sub-nav {
+        height: 0 !important;
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.2s linear;
+    }
+
+    .nav-item .sub-nav li {
+        
+    }
+
+    #showAbout:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+
+    #showCourses:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+    #showStaff:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+    #showBlog:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-collapse .nav-group-left {
+        order: 2;
+        flex-direction: column;
+        height: 0;
+        padding-left: 10px;
+        width: 100%;
+        transition: all 0.2s linear;
+    }
+
+    .form-search {
+        order: 1;
+        flex: 1;
+    }
+
+    .nav-mobile {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+        text-align: start;
+        color: #ffffff;
+    }
+
+    #toggle:checked ~ .nav-group-left {
+        height: 290px !important;
+        overflow-y: auto;
+    }
+
+    /* banner */
+
+    .banner .banner-coures {
+        position: unset;
+        height: auto;
+    }
+
+    .banner-coures .coures-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner .control-caro {
+        display: none;
+    }
+
+    .caption .caption-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .caption .caption-inner h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .caption .caption-inner p {
+        margin-top: 20px;
+    }
+
+    .caption .caption-inner button {
+        width: 100px;
+        height: 30px;
+    }
+
+    /* offer */
+
+    .offer {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 114px;
+    }
+
+    .offer .img-offer {
+        display: none;
+    }
+
+    /* statistical */
+
+    .statistical {
+        background-image: url('../img/skill-teacher/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 114px;
+    }
+
+    .statistical > img {
+        display: none;
+    }
+
+    .statistical .container {
+        position: unset;
+        transform: translateX(0);
+    }
+
+    .statistical-inner {
+        flex-direction: column;
+    }
+
+    .statistical-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* student-say-inner */
+
+    .student-say .page-title {
+        width: 100% !important;
+    }
+
+    .student-say-inner {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-bottom: 118px;
+    }
+
+    .student-say-footer {
+        flex-direction: column;
+    }
+
+    .student-say-footer img {
+        width: 100% !important;
+    }
+
+    /* footer */
+
+    .footer-content .categories {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* header */
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .header-top .brand {
+        margin: 20px 0;
+    }
+
+    .header-top .apply {
+        width: 100%;
+        text-align: end;
+    }
+
+    .header-top .apply > button {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    /* nav */
+
+    .main-nav {
+        height: auto;
+        padding: 0 -15px !important;
+    }
+
+    .nav-item {
+        flex: 1;
+    }
+
+    .nav-item .sub-nav {
+        height: 0 !important;
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.2s linear;
+    }
+
+    .nav-item .sub-nav li {
+        
+    }
+
+    #showAbout:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+
+    #showCourses:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+    #showStaff:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+    #showBlog:checked ~ .sub-nav {
+        opacity: 1;
+        position: unset;
+        height: 136px !important;
+        overflow: auto;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-collapse .nav-group-left {
+        order: 2;
+        flex-direction: column;
+        height: 0;
+        padding-left: 10px;
+        width: 100%;
+        transition: all 0.2s linear;
+    }
+
+    .form-search {
+        order: 1;
+        flex: 1;
+    }
+
+    .nav-mobile {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+        text-align: start;
+        color: #ffffff;
+    }
+
+    #toggle:checked ~ .nav-group-left {
+        height: 290px !important;
+        overflow-y: auto;
+    }
+
+    /* banner */
+
+    .banner .banner-coures {
+        position: unset;
+        height: auto;
+    }
+
+    .banner-coures .coures-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner .control-caro {
+        display: none;
+    }
+
+    .caption .caption-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .caption .caption-inner h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .caption .caption-inner p {
+        margin-top: 20px;
+    }
+
+    .caption .caption-inner button {
+        width: 100px;
+        height: 30px;
+    }
+
+    /* offer */
+
+    .offer {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 114px;
+    }
+
+    .offer .img-offer {
+        display: none;
+    }
+
+    /* statistical */
+
+    .statistical {
+        background-image: url('../img/skill-teacher/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 114px;
+    }
+
+    .statistical > img {
+        display: none;
+    }
+
+    .statistical .container {
+        position: unset;
+        transform: translateX(0);
+    }
+
+    .statistical-inner {
+        flex-direction: column;
+    }
+
+    .statistical-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* student-say-inner */
+
+    .student-say .page-title {
+        width: 100% !important;
+    }
+
+    .student-say-inner {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-bottom: 118px;
+    }
+
+    .student-say-footer {
+        flex-direction: column;
+    }
+
+    .student-say-footer img {
+        width: 100% !important;
+    }
+
+    /* footer */
+
+    .footer-content .categories {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* header */
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .header-top .brand {
+        margin: 20px 0;
+    }
+
+    .header-top .apply {
+        width: 100%;
+        text-align: end;
+    }
+
+    .header-top .apply > button {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}
